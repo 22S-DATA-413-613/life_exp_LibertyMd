@@ -26,6 +26,7 @@ nrow(gapminder_unfiltered)
 ```
 
 ```{r}
+# This code gives the maximum life expectancy per year and the assosiated country.
 gapminder_unfiltered |>
   group_by(year) |>
   filter(lifeExp == max(lifeExp)) |>
